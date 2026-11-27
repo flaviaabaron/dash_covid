@@ -35,3 +35,9 @@ fig1.show()
 
 
 st.plotly_chart(fig1, use_container_width=True)
+
+
+fig2 = px.pie(df, values='Cumulative_cases', names='Country', title='Casos cumulados')
+fig2.show()
+
+st.plotly_chart(fig2, use_container_width= True)
