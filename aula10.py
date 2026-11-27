@@ -10,8 +10,6 @@ Original file is located at
 
 
 import pandas as pd
-
-#importando bibliotecas
 import plotly.express as px
 import streamlit as st
 
@@ -23,7 +21,6 @@ st.title('DASHCOVID: Um dashboad sobre dados Covid')
 
 #acessar dados
 df = pd.read_csv('WHO_time_series.csv')
-
 
 from plotly.graph_objs import XAxis
 #construir os graficos desejados
