@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/12UjVgDfLIjROYQ_zdv9Zg1uhUeBiNb-O
 """
 
-!pip install -q streamlit
+
 
 import pandas as pd
 
@@ -22,9 +22,9 @@ st.set_page_config(page_title='Dashcovid', layout='wide')
 st.title('DASHCOVID: Um dashboad sobre dados Covid')
 
 #acessar dados
-df = pd.read_csv('/content/WHO_time_series.csv')
+df = pd.read_csv('WHO_time_series.csv')
 
-df.head(3)
+
 
 from plotly.graph_objs import XAxis
 #construir os graficos desejados
